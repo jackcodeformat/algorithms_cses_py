@@ -1,14 +1,18 @@
+"""Algorithms CSES Weird Algorithm"""
+
 def weird_algorithm():
+    """Runs the weird algorithm from CSES Problem Set 
+    This is a try of this problem by codeformat"""
     valid_number = False
     while valid_number is False:
         try:
             num = int(input("Input a positive number above 1: "))
-            if num < 2 or num > pow(10,6) or ValueError:
+            if num < 2 or num > pow(10,6):
                 print("Input a valid number")
             else:
                 valid_number = True
-        except:
-            print("Input a valid number")  
+        except ValueError:
+            print("Input a valid number")
     print(num)
     while num != 1:
         if num % 2 == 0:
