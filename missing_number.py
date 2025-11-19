@@ -8,7 +8,7 @@ def missing_number(numbers):
             if numbers[num] > numbers[num + 1]:
                 numbers[num], numbers[num + 1] = numbers[num + 1], numbers[num]
     print(numbers)
-    for x in range((numbers) - 1):
+    for x in range(len(numbers) - 1):
         if numbers[x + 1] != numbers[x] + 1:
             return numbers[x] + 1
 
