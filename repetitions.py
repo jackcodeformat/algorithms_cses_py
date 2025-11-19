@@ -1,7 +1,7 @@
 """Algorithms CSES Repitition Algorithm"""
 
 def repetitions(string):
-    """Algorithm to count largest letter repetition in a string"""
+    """Algorithm to count largest letter repetition in a string try by codeformat"""
     max_char = 0
     count = 0
     letter = string[0]
